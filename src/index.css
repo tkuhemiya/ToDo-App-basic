@@ -1,82 +1,105 @@
+
 body{
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #f2f3f8;
+  background-color: #3b82f6;
+  padding: 0px;
+  margin: 0px;
+}
+.root{
+  margin: 0px;
 }
 h1{
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 10vw, 2rem); 
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   color: #000000;
-  margin: 5px auto 10px auto;
+  margin: 0px auto 10px auto;
 }
 h4{
-  font-size: 1.5rem;
-  margin: 10px 10px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin: 10px 0px;
 }
 p{
   font-size: 1.5rem;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   margin: 10px 5px 20px;
 }
 header{
   width: 100vw;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  background-color: #f3f7fe;
+}
+nav{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 button{
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 span{
   color: #575757;
 }
 .tab-container{
   width: 100vw;
-  
 }
 .tab-button{
-  padding: 0px 20px;
-  margin: 5px 20px;
-  text-align: center;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  border-radius: 10px 10px 0px 0px;
   background-color: transparent;
 }
 .tab-button h4{
   color: #868686;
 }
 .tab-button:hover{
-  border-bottom: 1px solid #271c19;
+
 }
 .tab-button-selected{
-  padding: 0px 20px;
-  margin: 5px 20px;
-  background-color: transparent;
-  border-bottom: 3px solid #271c19;
-  text-align: center;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+.tab-button-selected span{
+  color: #d3d3d3;
 }
 
 .todo-card{
-  width: 45%;
-  margin: 10px auto;
-  padding: 10px 20px;
-  border-radius: 30px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+  width: min(85%, 600px);
+  margin: 5px auto;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background: #e6e6e6;
 }
 .card-container{
+  background-color: #3b82f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px 0px 0px ;
 }
-
-
-.done{
-  margin: 0px 10px;
-  background-color: #f3f7fe;
-  color: #3b82f6;
+.todo-btn{
+  margin: 10px 10px;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  width: 100px;
-  height: 45px;
+  width: 60px;
+  height: 35px;
   transition: 0.3s;
+}
+
+.done{
+  color: #3b82f6;
 }
 
 .done:hover{
@@ -85,15 +108,7 @@ span{
   color: #fff;
 }
 .delete{
-  margin: 0px 10px;
-  background-color: #f3f7fe;
   color: #ff0000;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 100px;
-  height: 45px;
-  transition: 0.3s;
 }
 .delete:hover{
   background-color: #ff0000;
@@ -101,5 +116,27 @@ span{
   color: #fff;
 }
 
+.input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  height: 40px;
+}
 
-
+.input-container input{
+  height: 100%;
+  width: min(80%, 400px);
+  padding: 0px 15px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+.input-container button{
+  border: none;
+  height: 100%;
+  width: 50px;
+  border-radius: 0px 10px 10px 0px;
+}
+.input-container img{
+  height: 20px;
+}

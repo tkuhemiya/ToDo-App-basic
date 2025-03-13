@@ -61,9 +61,10 @@ function App(){
 
   return(
     <>
-
-      <Header todos={todo} />
-      <Tabs todos={todo} selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
+      <header>
+        <Header todos={todo} />
+        <Tabs todos={todo} selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
+      </header>
       <div className="card-container">
         <TodoList todos={todo} selectedTab={selectedTab} editTodo={editTodo} deleteTodo={deleteTodo} />
         <TodoInput addTodo={addTodo} selectedTab={selectedTab} />

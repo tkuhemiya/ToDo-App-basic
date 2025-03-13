@@ -8,9 +8,9 @@ export function TodoCard(props){
     return(
         <div className="todo-card">
             <p>{todos.input}</p>
-            <div>
-                <button disabled={todos.completed} onClick={() => {editTodo(todoIndex)}} className="done">Done</button>
-                <button onClick={() => {deleteTodo(todoIndex)}} className="delete">Delete</button>
+            <div className="done-delete">
+                <button disabled={todos.completed} onClick={() => {editTodo(todoIndex)}} className="done todo-btn">Done</button>
+                <button onClick={() => {deleteTodo(todoIndex)}} className="delete todo-btn">Delete</button>
             </div>
         </div>
     )

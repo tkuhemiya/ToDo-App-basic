@@ -8,8 +8,6 @@ export function Header( props ){
     
 
     return(
-        <header>
             <h1 className="hh">You Have <span>({todoLength})</span> {isTaskPrural}</h1>
-        </header>
     )
 }

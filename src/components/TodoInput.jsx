@@ -11,8 +11,8 @@ export function TodoInput(props){
     return;
   }
     return(
-        <div>
-            <input type="text" placeholder="Add Task" value={inputval} onChange={(e) => {setInputval(e.target.value)}} />
+        <div className="input-container">
+            <input type="text" placeholder="New task" value={inputval} onChange={(e) => {setInputval(e.target.value)}} />
             <button onClick={() => {
                 if (!inputval){
                     return;
@@ -20,7 +20,7 @@ export function TodoInput(props){
                     addTodo(inputval);
                 }
                 }}>
-                <i className="fa-solid fa-plus"></i>
+                <img src="./src/assets/plus.svg" alt="" className="icon" />
             </button>
 
         </div>
