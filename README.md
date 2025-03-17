@@ -2,7 +2,7 @@
 a simple todo app using react
 
 ## How to use
-visit : [https://preeminent-cheesecake-b18d45.netlify.a](https://preeminent-cheesecake-b18d45.netlify.a)
+visit : [https://preeminent-cheesecake-b18d45.netlify.app/](https://preeminent-cheesecake-b18d45.netlify.app/)
 
 ## How it works
 - there are three tabs, one stores all the notes, one stores incomplete notes, one stores completed notes
